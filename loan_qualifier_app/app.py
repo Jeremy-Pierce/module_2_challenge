@@ -109,7 +109,7 @@ def save_qualifying_loans(qualifying_loans):
         qualifying_loans (list of lists): The qualifying bank loans.
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
-    answer = questionary.text("Do you wish to save this?").ask().lower()
+    answer = questionary.confirm.ask("Do you wish to save this?").ask().lower()
     if answer == "yes":
         save_prompt = questionary.text("Please specify where you wish to save these contents").ask()
         save_prompt = str(save_prompt) + ".csv"

@@ -1,18 +1,18 @@
-# Project Title
+# Loan Qualifier CLI - Module 2 Challenge
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+For this challenge, the client wanted to be able to save qualifying loans to a CSV file so that they can share the results as a spreadsheet.
 
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
-
+Technolgoies needed to run are, Terminal, Python, VS code.
 ---
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+Once downloaded, run terminal and navigate to the file location. Once there, type "python app.py" then choose your file location where you would like to save the data.
+
 
 ---
 
@@ -23,9 +23,8 @@ This section should include screenshots, code blocks, or animations explaining h
 ---
 
 ## Contributors
-
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
-
+Jeremy Pierce
+SMU FinTech
 ---
 
 ## License

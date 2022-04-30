@@ -1,0 +1,170 @@
+(base)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ conda activate dev
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ pip install fire
+Requirement already satisfied: fire in c:\users\jerem\anaconda3\envs\dev\envs\dev\envs\dev\lib\site-packages (0.4.0)
+Requirement already satisfied: six in c:\users\jerem\anaconda3\envs\dev\envs\dev\envs\dev\lib\site-packages (from fire) (1.16.0)
+Requirement already satisfied: termcolor in c:\users\jerem\anaconda3\envs\dev\envs\dev\envs\dev\lib\site-packages (from fire) (1.1.0)
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ pip install questionary
+Requirement already satisfied: questionary in c:\users\jerem\anaconda3\envs\dev\envs\dev\envs\dev\lib\site-packages (1.10.0)
+Requirement already satisfied: prompt_toolkit<4.0,>=2.0 in c:\users\jerem\anaconda3\envs\dev\envs\dev\envs\dev\lib\site-packages (from questionary) (3.0.20)
+Requirement already satisfied: wcwidth in c:\users\jerem\anaconda3\envs\dev\envs\dev\envs\dev\lib\site-packages (from prompt_toolkit<4.0,>=2.0->questionary) (0.2.5)
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ conda deactivate
+(base)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ conda update conda
+Collecting package metadata (current_repodata.json): done
+Solving environment: \
+Warning: 2 possible package resolutions (only showing differing packages):
+  - defaults/noarch::sphinx-4.4.0-pyhd3eb1b0_0, defaults/win-64::docutils-0.17.1-py37haa95532_1
+  - defaults/win-64::docutils-0.18.1-py37haa95532_2, defaults/win-64::sphinx-1.8.5-py37done
+
+## Package Plan ##
+
+  environment location: C:\Users\jerem\anaconda3\envs\dev\envs\dev
+
+  added / updated specs:
+    - conda
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    jpeg-9e                    |       h2bbff1b_0         292 KB
+    libiconv-1.16              |       h2bbff1b_2         651 KB
+    libssh2-1.10.0             |       hcd4344a_0         222 KB
+    ------------------------------------------------------------
+                                           Total:         1.1 MB
+
+The following packages will be UPDATED:
+
+  jpeg                                        9d-h2bbff1b_0 --> 9e-h2bbff1b_0
+  libiconv                                  1.15-h1df5818_7 --> 1.16-h2bbff1b_2
+  libssh2                                  1.9.0-h7a1dbc1_1 --> 1.10.0-hcd4344a_0
+  sphinx              pkgs/main/win-64::sphinx-1.8.5-py37_0 --> pkgs/main/noarch::sphinx-4.4.0-pyhd3eb1b0_0
+
+The following packages will be DOWNGRADED:
+
+  docutils                            0.18.1-py37haa95532_2 --> 0.17.1-py37haa95532_1
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+libiconv-1.16        | 651 KB    | ############################################################################ | 100%
+libssh2-1.10.0       | 222 KB    | ############################################################################ | 100%
+jpeg-9e              | 292 KB    | ############################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(base)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ code .
+(base)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ conda activate dev
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ code .
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ ls
+app.py  data/  qualifier/  README.md
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ python app.py
+? Enter a file path to a rate-sheet (.csv): module_2_challenge
+Oops! Can't find this path: module_2_challenge
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ python app.py
+? Enter a file path to a rate-sheet (.csv): data/daily_rate_sheet.csv
+? What's your credit score? 700
+? What's your current amount of monthly debt? 200
+? What's your total monthly income? 8000
+? What's your desired loan amount? 6000
+? What's your home value? 500
+The monthly debt to income ratio is 0.03
+The loan to value ratio is 12.00.
+Found 0 qualifying loans
+? Do you wish to save this? Yes
+Traceback (most recent call last):
+  File "app.py", line 148, in <module>
+    fire.Fire(run)
+  File "C:\Users\jerem\anaconda3\envs\dev\envs\dev\envs\dev\lib\site-packages\fire\core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "C:\Users\jerem\anaconda3\envs\dev\envs\dev\envs\dev\lib\site-packages\fire\core.py", line 471, in _Fire
+    target=component.__name__)
+  File "C:\Users\jerem\anaconda3\envs\dev\envs\dev\envs\dev\lib\site-packages\fire\core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "app.py", line 144, in run
+    save_qualifying_loans(qualifying_loans)
+  File "app.py", line 113, in save_qualifying_loans
+    answer = questionary.confirm("Do you wish to save this?").ask().lower()
+AttributeError: 'bool' object has no attribute 'lower'
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ python app.py
+? Enter a file path to a rate-sheet (.csv): data/daily_date_sheet.csv
+Oops! Can't find this path: data\daily_date_sheet.csv
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ python app.py
+? Enter a file path to a rate-sheet (.csv): data/daily_rate_sheet.csv
+? What's your credit score? 700
+? What's your current amount of monthly debt? 200
+? What's your total monthly income? 500
+? What's your desired loan amount? 7000
+? What's your home value? 1000
+The monthly debt to income ratio is 0.40
+The loan to value ratio is 7.00.
+Found 0 qualifying loans
+? Do you wish to save this? Yes
+Your file was not saved
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ python app.py
+? Enter a file path to a rate-sheet (.csv): data/daily_rate_sheet.csv
+? What's your credit score? 100
+? What's your current amount of monthly debt? 200
+? What's your total monthly income? 300
+? What's your desired loan amount? 400
+? What's your home value? 200
+The monthly debt to income ratio is 0.67
+The loan to value ratio is 2.00.
+Found 0 qualifying loans
+? Do you wish to save this? Yes
+? Please specify where you wish to save these contents
+You File has been saved
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ python app.py
+? Enter a file path to a rate-sheet (.csv): data/daily_rate_shee.csv
+Oops! Can't find this path: data\daily_rate_shee.csv
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$ python app.py
+? Enter a file path to a rate-sheet (.csv): data/daily_rate_sheet.csv
+? What's your credit score? 10
+? What's your current amount of monthly debt? 20
+? What's your total monthly income? 30
+? What's your desired loan amount? 40
+? What's your home value? 10
+The monthly debt to income ratio is 0.67
+The loan to value ratio is 4.00.
+Found 0 qualifying loans
+? Do you wish to save this? Yes
+? Please specify where you wish to save these contents
+? You did not specify the file location, please specify where you wish to save these contents test.csv
+You File has been saved
+(dev)
+jerem@DESKTOP-BO9U43F MINGW64 ~/OneDrive/Desktop/Github_upload/Starter_Code/loan_qualifier_app/module_2_challenge/loan_qualifier_app (main)
+$
